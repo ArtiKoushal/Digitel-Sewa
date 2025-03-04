@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Digitel Sewa Shop - Digital Services & Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CSC Digitel Sewa Shop offers comprehensive digital services, government schemes, and online solutions for your community.">
+    <meta name="keywords" content="CSC, Digital Sewa, Government Services, Online Solutions, Digital India">
+    <meta name="author" content="CSC Digitel Sewa Shop">
+    
+    <!-- Styles -->
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f4f6f7;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Services Section */
+        #services-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px 0;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .service-card button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Ad Container Styles */
+        .ad-container {
+            margin: 20px 0;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive Adjustments */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            #services-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzNhOTNjYyIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPkNTQzwvdGV4dD48L3N2Zz4=" alt="CSC Logo" class="logo">
+            <h1>CSC Digitel Sewa Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- AdSense Banner Ad (Top) -->
+        <div class="ad-container">
+            <div style="width: 100%; height: 90px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center;">
+                Advertisement Space
+            </div>
+        </div>
+        
+        <section id="services-section">
+            <!-- Services will be dynamically populated -->
+        </section>
+        
+        <!-- AdSense Mid-page Ad -->
+        <div class="ad-container">
+            <div style="width: 100%; height: 250px; background-color: #e0e0e0; display: flex; justify-content: center; align-items: center;">
+                Advertisement Space
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CSC Digitel Sewa Shop. All Rights Reserved.</p>
+            <p>Powered by Digital India Initiative</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic Content and Service Management
+        class DigitelSewaApp {
+            constructor() {
+                this.services = [
+                    {
+                        id: 1,
+                        name: 'Aadhaar Services',
+                        description: 'Aadhaar card registration, updates, and related services',
+                        icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgZmlsbD0iIzRhOTBjYyIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPkFhPC90ZXh0Pjwvc3ZnPg=='
+                    },
+                    {
+                        id: 2,
+                        name: 'Digital Payments',
+                        description: 'UPI, bank services, and digital transaction support',
+                        icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzJlY2M3MSIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPlBheTwvdGV4dD48L3N2Zz4='
+                    },
+                    {
+                        id: 3,
+                        name: 'Government Schemes',
+                        description: 'Information and application for various government programs',
+                        icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cG9seWdvbiBwb2ludHM9IjUwIDEwIDkwIDkwIDEwIDkwIiBmaWxsPSIjZjM5YzEyIi8+PHRleHQgeD0iNTAiIHk9IjcwIiBmb250LXNpemU9IjIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+R292PC90ZXh0Pjwvc3ZnPg=='
+                    },
+                    {
+                        id: 4,
+                        name: 'Bill Payments',
+                        description: 'Pay electricity, water, and other utility bills online',
+                        icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2U3NGMzYyIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPkJpbGw8L3RleHQ+PC9zdmc+'
+                    }
+                ];
+            }
+
+            initializeApp() {
+                this.loadServices();
+                this.setupEventListeners();
+            }
+
+            loadServices() {
+                const servicesContainer = document.getElementById('services-section');
+                servicesContainer.innerHTML = this.services.map(service => `
+                    <div class="service-card" data-service-id="${service.id}">
+                        <img src="${service.icon}" alt="${service.name} Icon">
+                        <h3>${service.name}</h3>
+                        <p>${service.description}</p>
+                        <button>Learn More</button>
+                    </div>
+                `).join('');
+            }
+
+            setupEventListeners() {
+                const serviceCards = document.querySelectorAll('.service-card');
+                serviceCards.forEach(card => {
+                    card.addEventListener('click', this.handleServiceClick.bind(this));
+                });
+            }
+
+            handleServiceClick(event) {
+                const serviceId = event.currentTarget.dataset.serviceId;
+                alert(`You clicked on Service ${serviceId}. Detailed information coming soon!`);
+            }
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            const app = new DigitelSewaApp();
+            app.initializeApp();
+        });
+    </script>
+</body>
+</html>
